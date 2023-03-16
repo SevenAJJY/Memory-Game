@@ -1,4 +1,4 @@
-document.querySelector('.control-buttons span').onclick = () => {
+document.querySelector('.control-buttons button').onclick = () => {
     let yourName = prompt('What\'s Your Name ?');
     if (yourName == null || yourName == "") {
         document.querySelector('.name span').innerHTML = 'Unknown';
@@ -117,6 +117,11 @@ function checkMatchedBlocks(fBlock, sBlock) {
 
         sBlock.classList.remove('is-flipped');
         sBlock.classList.add('has-match');
+
+        setTimeout(() => {
+            fBlock.style.opacity = '0';
+            sBlock.style.opacity = '0';
+        }, 3000);
 
         document.querySelector('#success').play();
     } else {

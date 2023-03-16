@@ -21,18 +21,11 @@ body {
     background-color: rgba(0, 162, 255, 0.932);
 }
 
-.control-buttons span {
+.control-buttons .btn-start {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f44336;
-    color: #fff;
-    padding: 8px 25px;
-    font-size: 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
 }
 
 .info-container {
@@ -146,6 +139,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform .3s ease;
 }
 
 .result.active {
@@ -180,7 +174,7 @@ body {
 }
 
 .button {
-    --color: #007bff;
+    --color: #9900ff;
     padding: 0.8em 1.7em;
     background-color: transparent;
     border-radius: .3em;
