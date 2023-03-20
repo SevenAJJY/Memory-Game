@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #007bff;
+    background-color: #9900ff;
 }
 
 .control-buttons {
@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 162, 255, 0.932);
+    background-color: #9900ff70;
 }
 
 .control-buttons .btn-start {
@@ -39,6 +39,7 @@ body {
     justify-content: space-between;
     border-radius: 5px;
     opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .info-container.hide {
@@ -67,6 +68,7 @@ body {
     margin: 20px auto;
     border-radius: 6px;
     padding: 30px 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .memory-game-block.no-clicking {
@@ -140,6 +142,7 @@ body {
     justify-content: center;
     flex-direction: column;
     transition: transform .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .result.active {
@@ -159,6 +162,10 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0 30pX;
+}
+
+.result .stats>div.tries {
+    align-self: flex-end;
 }
 
 .result .stats>div p {
@@ -189,6 +196,7 @@ body {
     text-transform: uppercase;
     color: var(--color);
     z-index: 1;
+    font-weight: 700;
 }
 
 .button::before,
@@ -222,7 +230,7 @@ body {
 }
 
 .button:hover {
-    color: rgb(10, 25, 30);
+    color: #fff;
 }
 
 .button:active {
